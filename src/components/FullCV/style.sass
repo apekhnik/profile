@@ -1,0 +1,172 @@
+$mainDark: #2c3e50
+.language__switcher
+    position: absolute
+    top: 0
+    right: -70px
+    width: 50px
+    button
+        background-color: $mainDark
+        color: white
+.skills__list ul li
+    &:hover
+        cursor: pointer
+        color: white
+.fullCv__right_header
+    padding-top: 1px
+    padding-bottom: 30px
+    box-sizing: border-box
+    width: 100%
+    background-color: whitesmoke
+    position: sticky
+    top: 0
+    z-index: 10
+    p
+        font-size: 14px
+        font-weight: 500
+        letter-spacing: 1px
+        margin-top: 25px
+        color: grey
+    h2
+        font-size: 24px
+        font-weight: bold
+        letter-spacing: 2px
+        position: relative
+        color: #2c3e50
+.header__logo
+    margin: 0 auto
+    animation: App-logo-spin infinite 20s linear
+    width: 100px
+    height: 100px
+@keyframes App-logo-spin
+    from
+        transform: rotate(0deg)
+
+    to
+        transform: rotate(360deg)
+.fullCv__right_experience
+    padding-top: 30px
+    color: $mainDark
+    text-align: left
+    padding-right: 20px
+    border-bottom: 1px solid grey
+    padding-bottom: 15px
+    margin-right: 20px
+
+    h2
+        display: block
+        text-align: left
+        position: relative
+        font-weight: 600
+        margin-bottom: 30px
+        &::after
+            content: ''
+            position: absolute
+            background-color: black
+            height: 1.2px
+            width: 25px
+            dispay: block
+            bottom: -10px
+            left: 0
+.experience
+    margin-bottom: 15px
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    &__title
+        position: relative
+        display: inline-block
+        margin-bottom: 10px
+        &::after
+            content: ' '
+            position: absolute
+            width: 100%
+
+            left: 0
+            bottom: -5px
+            display: block
+            height: 1.5px
+            background-color: grey
+    h3
+        font-size: 16px
+        font-weight: 600
+        letter-spacing: .5px
+        color: $mainDark
+    &__description
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        color: grey
+        p
+            font-size: 12px
+            font-style: italic
+            a
+                text-decoration: none
+                color: grey
+                &:hover
+                    color: $mainDark
+        span
+            font-size: 12px
+            font-style: italic
+    &__about
+        p
+            font-size: 13px
+            line-height: 15px
+            color: $mainDark
+            font-style: italic
+            span
+                font-style: italic
+                font-weight: 600
+                font-size: 13px
+.experience__details
+    float: right
+    text-decoration: none
+    font-size: 12px
+
+.wrapper
+    perspective: 1000px
+    transform-style: preserve-3d
+    position: relative
+
+    .about
+        backface-visibility: hidden
+        width: 100%
+        height: 100%
+        position: absolute
+        background: white
+        box-sizing: border-box
+        top: 0
+        transition: transform .8s
+        box-shadow: -10px 11px 11px 4px rgba(34, 60, 80, 0.42)
+        background-color: $mainDark
+        padding: 50px
+        text-align: left
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        h3
+            color: white
+            font-size: 22px
+            margin-bottom: 15px
+        p
+            font-size: 16px
+            letter-spacing: 0.6px
+            line-height: 18px
+            border: 1px solid white
+            padding: 10px
+        &__footer
+            position: absolute
+            bottom: 50px
+            left: 50%
+            transform: translate(-50%)
+            text-align: center
+            span
+                color: black
+                font-size: 20px
+                font-weight: bold
+
+.icons__item
+    width: 50px
+    height: 50px
+    color: white!important
+    margin-bottom: 10px
+    margin-right: 10px
+    margin-left: 10px
+#tsparticles
+    width: 100%
+    height: 100%
