@@ -9,9 +9,14 @@ function App() {
   const isOpen = useSelector((state) => state.app.showInfoPage);
   const toggle = () =>
     isOpen ? dispatch(setInfoHide()) : dispatch(setInfoShow());
+  const btnClass = !isOpen ? "menu_toggle__open" : "menu_toggle";
   const toggleShow = (
-    <button onClick={toggle} className="menu-toggle">
-      +
+    <button onClick={toggle} className={btnClass}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      {isOpen ? "Open" : "Close"}
     </button>
   );
   return (
