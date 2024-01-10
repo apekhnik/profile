@@ -22,7 +22,7 @@ const FullCV: React.FC<Props> = (props) => {
             <ButtonGroup disableElevation variant="contained" orientation="vertical" className='language__switcher'>
                 <Button onClick={() => dispatch(cnahgeLang('Ru'))} >Ru</Button>
                 <Button onClick={() => dispatch(cnahgeLang('Eng'))}>Eng</Button>
-                <Button onClick={() => setShouAbout(showAbout => !showAbout)}>{!showAbout ? 'hide' : 'show'}</Button>
+                <Button onClick={() => setShouAbout(showAbout => !showAbout)}>{!showAbout ? 'hide info' : 'show info'}</Button>
             </ButtonGroup>
             <div className='fullCv' style={{ transform: `rotateY(${showAbout ? 0 : 180}deg)` }}>
 
